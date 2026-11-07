@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | V&D Journeys</title>
+    <meta name="description" content="Contact V&D Journeys to plan your Kerala holiday. Enquire about personalized Kerala tour packages and travel experiences.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a class="logo" href="index.html">
+        <span class="logo-image">
+            <img src="./logovd.png" alt="V&D Journeys">
+        </span>
+        <span class="logo-details">
+            <span class="brand-name">V&D <span>JOURNEYS</span></span>
+            <span class="brand-tagline">TRAVEL • EXPLORE • DISCOVER</span>
+        </span>
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+
+    <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a class="nav-button" href="https://wa.me/918086525032">Plan Your Trip</a>
+    </nav>
+</header>
+
+<!-- CONTACT HERO -->
+<section class="contact-hero">
+    <div class="contact-hero-content">
+        <span class="section-label">WE WOULD LOVE TO HEAR FROM YOU</span>
+        <h1>Let's Start Your <span>Journey.</span></h1>
+        <p>Tell us about your travel plans. We'll help you create a beautiful Kerala experience.</p>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section section-padding">
+    <div class="container contact-grid">
+
+        <!-- CONTACT INFORMATION -->
+        <div class="contact-info">
+            <span class="section-label">GET IN TOUCH</span>
+            <h2>We're Here to Help You Plan.</h2>
+
+            <p>
+                Have questions about our packages or need a customized
+                travel plan? Get in touch with us.
+            </p>
+
+            <div class="contact-item">
+                <div class="contact-icon">☎</div>
+                <div>
+                    <h3>Call / WhatsApp</h3>
+                    <a href="https://wa.me/918086525032">+91 80865 25032</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">✉</div>
+                <div>
+                    <h3>Email Us</h3>
+                    <a href="mailto:cuvn121@gmail.com">cuvn121@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">⌖</div>
+                <div>
+                    <h3>Our Destination</h3>
+                    <p>Kerala, India</p>
+                </div>
+            </div>
+
+            <div class="contact-note">
+                <h3>Planning a Kerala Holiday?</h3>
+                <p>Share your travel dates and preferences. We can help you plan your journey.</p>
+            </div>
+        </div>
+
+        <!-- ENQUIRY FORM -->
+        <div class="contact-form-wrapper">
+            <span class="section-label">TRIP ENQUIRY</span>
+            <h2>Plan Your Trip With Us</h2>
+            <p>Fill in your details and send your enquiry directly through WhatsApp.</p>
+
+            <form id="enquiryForm">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" placeholder="Your phone number" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Your email address">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="travelDate">Travel Date</label>
+                        <input type="date" id="travelDate">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="travellers">Number of Travellers</label>
+                        <select id="travellers">
+                            <option value="">Select travellers</option>
+                            <option>1 Person</option>
+                            <option>2 Persons</option>
+                            <option>3-4 Persons</option>
+                            <option>5-7 Persons</option>
+                            <option>8-10 Persons</option>
+                            <option>More than 10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="package">Interested Package</label>
+                    <select id="package">
+                        <option value="">Choose a package</option>
+                        <option>2 Days - Kerala Quick Escape</option>
+                        <option>3 Days - Backwaters & Beach</option>
+                        <option>4 Days - Kerala Hills & Backwaters</option>
+                        <option>5 Days - The Kerala Highlights</option>
+                        <option>6 Days - Premium Kerala Signature</option>
+                        <option>10 Days - Grand Kerala Discovery</option>
+                        <option>Customized Tour Package</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="4" placeholder="Tell us about your travel requirements..."></textarea>
+                </div>
+
+                <button type="submit" class="primary-btn form-submit">
+                    Send Enquiry via WhatsApp →
+                </button>
+
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <a class="logo footer-logo" href="index.html">
+            <span class="logo-image">
+                <img src="./logovd.png" alt="V&D Journeys">
+            </span>
+            <span class="logo-details">
+                <span class="brand-name">V&D <span>JOURNEYS</span></span>
+                <span class="brand-tagline">TRAVEL • EXPLORE • DISCOVER</span>
+            </span>
+        </a>
+
+        <p>Meaningful journeys through God's Own Country.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="packages.html">Packages</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="copyright">
+            © <span class="current-year"></span> V&D Journeys. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById('navigation').classList.toggle('active');
+}
+
+document.querySelectorAll('.current-year').forEach(el => {
+    el.textContent = new Date().getFullYear();
+});
+
+document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const date = document.getElementById('travelDate').value;
+    const travellers = document.getElementById('travellers').value;
+    const packageName = document.getElementById('package').value;
+    const message = document.getElementById('message').value.trim();
+
+    const whatsappMessage = `
+Hello V&D Journeys!
+
+I would like to enquire about a Kerala tour.
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email || 'Not provided'}
+Travel Date: ${date || 'Not decided'}
+Travellers: ${travellers || 'Not specified'}
+Package: ${packageName || 'Not selected'}
+
+Message:
+${message || 'No additional message'}
+
+Please share more details. Thank you!
+`;
+
+    const whatsappURL = 'https://wa.me/918086525032?text=' +
+        encodeURIComponent(whatsappMessage);
+
+    window.open(whatsappURL, '_blank', 'noopener,noreferrer');
+});
+</script>
+
+</body>
+</html>
+c
