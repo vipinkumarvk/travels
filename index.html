@@ -209,19 +209,78 @@
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
-        <script>
+
+<script>
 const featured = [
-  {name:"Kerala Quick Escape",days:"2 Days / 1 Night",price:"₹1,20,000",tag:"SHORT GETAWAY",img:"./package1.jpg",desc:"A refreshing introduction to Kerala's heritage and backwaters.",id:"2-day"},
-  {name:"Backwaters & Beach",days:"3 Days / 2 Nights",price:"₹1,80,000",tag:"BACKWATER BLISS",img:"./package2.webp",desc:"Heritage lanes, houseboat cruise and a relaxed beach stay.",id:"3-day"},
-  {name:"Premium Kerala Signature",days:"6 Days / 5 Nights",price:"₹4,50,000",tag:"SIGNATURE EXPERIENCE",img:"./package3.webp",desc:"Kochi, Alleppey, Marari, Jatayu, Vagamon and Munnar.",id:"6-day"}
+  {
+    name: "Kerala Quick Escape",
+    days: "2 Days / 1 Night",
+    price: "₹1,20,000",
+    tag: "SHORT GETAWAY",
+    img: "./package1.jpg",
+    desc: "A refreshing introduction to Kerala's heritage and backwaters.",
+    id: "2-day"
+  },
+  {
+    name: "Backwaters & Beach",
+    days: "3 Days / 2 Nights",
+    price: "₹1,80,000",
+    tag: "BACKWATER BLISS",
+    img: "./package2.webp",
+    desc: "Heritage lanes, houseboat cruise and a relaxed beach stay.",
+    id: "3-day"
+  },
+  {
+    name: "Premium Kerala Signature",
+    days: "6 Days / 5 Nights",
+    price: "₹4,50,000",
+    tag: "SIGNATURE EXPERIENCE",
+    img: "./package3.webp",
+    desc: "Kochi, Alleppey, Marari, Jatayu, Vagamon and Munnar.",
+    id: "6-day"
+  }
 ];
-document.getElementById("featuredPackages").innerHTML = featured.map(p=>`
-<article class="package-card">
-<a href="package.html?id=${p.id}"><div class="package-image" style="background-image:url('${p.img}')"><span class="package-label">${p.tag}</span></div></a>
-<div class="package-info"><h3>${p.name}</h3><p>${p.desc}</p><small>${p.days}</small>
-<div class="package-footer"><div class="package-price">${p.price}<small>INDICATIVE PACKAGE PRICE</small></div><a href="package.html?id=${p.id}">VIEW DETAILS →</a></div></div></article>`).join("");
-function toggleMenu(){document.getElementById("navigation").classList.toggle("open")}
-document.getElementById("year").textContent=new Date().getFullYear();
+
+document.getElementById("featuredPackages").innerHTML =
+  featured.map(p => `
+    <article class="package-card">
+      <a href="package.html?id=${p.id}">
+        <div class="package-image" style="background-image:url('${p.img}')">
+          <span class="package-label">${p.tag}</span>
+        </div>
+      </a>
+
+      <div class="package-info">
+        <h3>${p.name}</h3>
+        <p>${p.desc}</p>
+        <small>${p.days}</small>
+
+        <div class="package-footer">
+          <div class="package-price">
+            ${p.price}
+            <small>INDICATIVE PACKAGE PRICE</small>
+          </div>
+
+          <a class="whatsapp-btn"
+             href="https://wa.me/918086525032?text=${encodeURIComponent(
+               `Hello, I am interested in the ${p.name} package. Please share more details.`
+             )}"
+             target="_blank"
+             rel="noopener noreferrer">
+            <i class="whatsapp-icon">☏</i> Contact Us
+          </a>
+        </div>
+      </div>
+    </article>
+  `).join("");
+
+function toggleMenu() {
+  document.getElementById("navigation").classList.toggle("open");
+}
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
 </script>
+
     </body>
 </html>
